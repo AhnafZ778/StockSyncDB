@@ -24,6 +24,6 @@ public class MultipleResourcesDemo {
             System.out.println("✅ File copied successfully");
         } catch (IOException e){
             System.err.println("❌ Error: " + e.getMessage());
-        }
+        } 
     }
 }
