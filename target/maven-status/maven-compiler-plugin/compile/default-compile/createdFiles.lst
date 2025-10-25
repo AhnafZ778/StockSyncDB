@@ -1,3 +1,4 @@
 com/stocksync/Main.class
 com/stocksync/model/Product.class
+com/stocksync/practice/TryWithResourcesDemo.class
 com/stocksync/model/Product$Builder.class
