@@ -98,7 +98,10 @@ public class Product{
             this.id = id;
             return this;
         }
-        public Builder sku(String sku){
+        public Builder sku(String sku) {
+            if (sku == null || sku.trim().isEmpty()) {  // ✅ Validation HERE!
+                throw new IllegalArgumentException("SKU cannot be null or empty");
+            }
             this.sku = sku;
             return this;
         }
@@ -110,7 +113,10 @@ public class Product{
             this.quantity = quantity;
             return this;
         }
-        public Builder price(double price){
+        public Builder price(double price) {
+            if (price < 0) {  // ✅ Validation HERE!
+                throw new IllegalArgumentException("Price cannot be negative");
+            }
             this.price = price;
             return this;
         }
