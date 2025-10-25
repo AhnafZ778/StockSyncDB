@@ -68,7 +68,7 @@ public class Product{
         if (percentage < 0 || percentage > 100){
             throw new IllegalStateException("percentage must be between 0 and 100");
         }
-        double newPrice = price * (1 + percentage / 100.0);
+        double newPrice = price * (1 - percentage / 100.0);
         return withPrice(newPrice);
     }
     public Product increasePrice(double percentage){

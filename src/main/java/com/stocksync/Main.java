@@ -1,4 +1,3 @@
-
 package com.stocksync;
 
 import com.stocksync.model.Product;
@@ -49,7 +48,8 @@ public class Main {
         System.out.println("Scenario 5: Try to sell 200 units (only 140 available)");
         try {
             Product invalid = afterRestock.decrementQuantity(200);
-        } catch (IllegalArgumentException e) {
+            System.out.println("❌ ERROR: Should have thrown exception but didn't!");
+        } catch (IllegalArgumentException | IllegalStateException e) {
             System.out.println("✅ Caught expected error: " + e.getMessage());
         }
         System.out.println();

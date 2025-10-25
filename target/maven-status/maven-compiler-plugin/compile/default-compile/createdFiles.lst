@@ -1,1 +1,3 @@
 com/stocksync/Main.class
+com/stocksync/model/Product.class
+com/stocksync/model/Product$Builder.class
