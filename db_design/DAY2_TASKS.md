@@ -1,10 +1,10 @@
 # Day 2 Task Tracker
 
 ## Task 1: Install SQLite and DB Browser
-- [ ] Install SQLite
-- [ ] Install DB Browser
-- [ ] Verify installations
-- [ ] Commit
+- [x] Install SQLite
+- [x] Install DB Browser
+- [x] Verify installations
+- [x] Commit
 
 ## Task 2: Design products table schema
 - [ ] Create schema.sql
